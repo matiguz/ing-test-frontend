@@ -58,7 +58,7 @@ export function events(state = { events: [], eventView:{},
         return Object.assign({},state,{ isAddEvent: false })
       }
       case ADD_EVENT_VIEW:{
-        return Object.assign({},state,{ isAddEvent: true })
+        return Object.assign({},state,{ eventView: {}, isAddEvent: true })
       }
       case ADD_EVENT:{
         return Object.assign({},state,{ isAddEvent: false })
