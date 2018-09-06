@@ -4,6 +4,7 @@
 * [Prerequisites](#prerequisites)
 * [Installation](#installation)
 * [Development server](#development-server)
+* [Doubts](#doubts)
 * [Next step](#next-step)
 
 ## Prerequisites
@@ -21,6 +22,10 @@ $> npm install
 ## Development server
 
 To run the development server open a terminal on the `ing-test-frontend` folder and run `npm start`. The server should open on `http://localhost:3000`.
+
+## Doubuts
+
+Contact me matiguz1990@gmail.com.
 
 ## Next step
 
