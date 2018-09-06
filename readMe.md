@@ -29,4 +29,11 @@ Contact me matiguz1990@gmail.com.
 
 ## Next step
 
+User for aplication
+
+```json
+{"user":"user",
+"password":"password"}
+```
+
 Enjoy your app.
