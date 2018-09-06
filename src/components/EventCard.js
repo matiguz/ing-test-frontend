@@ -12,7 +12,7 @@ class EventCard extends Component {
         let dispatch = this.props.dispatch || {}
 
         return (
-            <div className="col-sm-4>">
+            <div className="col-sm-6">
                 <div className="card text-center eventCard">
                     <div className="card-header text-left">
                         <span>{days}</span>

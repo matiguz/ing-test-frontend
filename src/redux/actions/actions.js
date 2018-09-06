@@ -13,6 +13,7 @@ export const LOGOUT_FAILURE = 'LOGOUT_FAILURE'
 
 //EVENTS CONST
 export const GET_EVENTS = 'GET_EVENTS'
+export const GET_EVENTS_HIGHLIGHTED = 'GET_EVENTS_HIGHLIGHTED'
 export const GET_EVENT_VIEW  = 'GET_EVENT_VIEW'
 export const BACK_EVENT_VIEW  = 'BACK_EVENT_VIEW'
 export const BACK_EVENT_ADD  = 'BACK_EVENT_ADD'
@@ -112,6 +113,16 @@ export function getEvents() {
   return dispatch => {
       axios.get('http://localhost:3001/events').then((response) => {
         dispatch( { type: GET_EVENTS, events: response.data})
+      })
+  }
+
+}
+
+export function getEventsHighlighted() {
+    
+  return dispatch => {
+      axios.get('http://localhost:3001/events/highlighted').then((response) => {
+        dispatch( { type: GET_EVENTS_HIGHLIGHTED, eventsHighlighted: response.data})
       })
   }
 

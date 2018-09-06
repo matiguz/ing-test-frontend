@@ -3,7 +3,7 @@
 import { combineReducers } from 'redux'
 import {
   LOGIN_REQUEST, LOGIN_SUCCESS, LOGIN_FAILURE, LOGOUT_SUCCESS, 
-  GET_EVENTS, GET_EVENT_VIEW, BACK_EVENT_VIEW, BACK_EVENT_ADD, ADD_EVENT, ADD_EVENT_VIEW
+  GET_EVENTS, GET_EVENT_VIEW, BACK_EVENT_VIEW, BACK_EVENT_ADD, ADD_EVENT, ADD_EVENT_VIEW, GET_EVENTS_HIGHLIGHTED
 } from '../actions/actions'
 
 function auth(state = {
@@ -39,11 +39,14 @@ function auth(state = {
   }
 }
 
-export function events(state = { events: [], eventView:{}, isAddEvent:false }, action){
-  debugger;  
+export function events(state = { events: [], eventView:{}, 
+                          eventsHighlighted:[],isAddEvent:false }, action){
   switch (action.type){
       case GET_EVENTS:{
         return Object.assign({},state,{ events: action.events })
+      }
+      case GET_EVENTS_HIGHLIGHTED:{
+        return Object.assign({},state,{ eventsHighlighted: action.eventsHighlighted })
       }
       case GET_EVENT_VIEW:{
         return Object.assign({},state,{ eventView: action.event })                                                                                                                                       
