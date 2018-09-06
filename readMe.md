@@ -1,4 +1,4 @@
-# Ingenious test - Backend application
+# Ingenious test - frontend application
 
 ## Index
 * [Prerequisites](#prerequisites)
