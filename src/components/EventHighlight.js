@@ -1,19 +1,16 @@
 import React, { Component } from 'react';
-import './../styles/eventCard.css'
+import './../styles/highlight.css'
 import './../styles/bootstrap-social.css'
-import { getEventView } from '../redux/actions/actions';
 
 class EventHiglight extends Component {
 
     render() {
 
         let event = this.props.event || {}
-        let dispatch = this.props.dispatch || {}
-        console.log(event);
         return (
             <div className="mt-4">
                 <div className="row mt-4 ml-2">
-                    <div className="col-sm-4 align-middle">
+                    <div className="col-sm-4">
                         <img src={event.picture} width="100%"/>
                     </div>
                     <div className="col-sm-8">
@@ -24,7 +21,7 @@ class EventHiglight extends Component {
                         <small> <strong>{event.place}</strong></small>
                     </div>
                 </div>
-                <hr className="bg-dark"/>
+                <hr/>
             </div>
         );
     }

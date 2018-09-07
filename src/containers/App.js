@@ -12,7 +12,7 @@ import { getEvents, getEventsHighlighted } from '../redux/actions/actions';
 import EventView from '../components/EventView';
 import Pagination from "react-js-pagination";
 import './../styles/app.css'
-
+import './../styles/bootstrap/css/bootstrap.css'
 
 class App extends Component {
 
@@ -72,16 +72,16 @@ class App extends Component {
                               }
                             })
                           }
-                          <div className="row"> 
-                          {<Pagination
-                            activePage={this.state.activePage}
-                            itemsCountPerPage={this.state.eventsPerPage}
-                            totalItemsCount={cant}
-                            pageRangeDisplayed={5}
-                            onChange={this.handlePageChange}
-                          />}
-                          </div>
                         </div>
+                          <div className="row">
+                            {<Pagination
+                              activePage={this.state.activePage}
+                              itemsCountPerPage={this.state.eventsPerPage}
+                              totalItemsCount={cant}
+                              pageRangeDisplayed={5}
+                              onChange={this.handlePageChange}
+                            />}
+                          </div>
                       </div>
                       <div className="col-sm-4">
                         <div className="mt-4 text-center">

@@ -13,7 +13,6 @@ export default class Navbar extends Component {
     const { dispatch, isAuthenticated, errorMessage, eventView, isAddEvent } = this.props
     return (
       <nav className='navbar navbar-dark bg-dark'>
-        <div className='container-fluid'>
           <h1 className="text-white">
           {Object.entries(eventView).length !== 0 && 
           <button className="btn btn-secondary btn-circle mr-3" onClick={() => dispatch(backEventView())}>
@@ -39,7 +38,6 @@ export default class Navbar extends Component {
             }
 
           </div>
-        </div>
       </nav>
     )
   }
