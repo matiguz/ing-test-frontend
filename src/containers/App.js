@@ -74,6 +74,8 @@ class App extends Component {
                           }
                         </div>
                           <div className="row">
+                          <div className="col-12">
+                          <div className="text-center">
                             {<Pagination
                               activePage={this.state.activePage}
                               itemsCountPerPage={this.state.eventsPerPage}
@@ -81,6 +83,8 @@ class App extends Component {
                               pageRangeDisplayed={5}
                               onChange={this.handlePageChange}
                             />}
+                          </div>
+                          </div>
                           </div>
                       </div>
                       <div className="col-sm-4">
